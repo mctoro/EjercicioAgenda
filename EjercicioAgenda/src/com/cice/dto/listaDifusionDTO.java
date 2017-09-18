@@ -5,9 +5,12 @@
  */
 package com.cice.dto;
 
+import java.util.List;
+
 
 public class listaDifusionDTO{
     
-    
+    private String nombreLista;
+    private List<profesionalesDTO> listaContactos;
     
 }
