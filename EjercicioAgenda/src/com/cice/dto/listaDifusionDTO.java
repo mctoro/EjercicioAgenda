@@ -11,6 +11,6 @@ import java.util.List;
 public class listaDifusionDTO{
     
     private String nombreLista;
-    private List<profesionalesDTO> listaContactos;
+    private List<contactosDTO> listaContactos;
     
 }
