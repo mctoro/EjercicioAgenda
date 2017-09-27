@@ -27,8 +27,70 @@ Tenemos que crear una agenda que nos permita:
  */
 package com.cice.agenda;
 
+import java.io.IOException;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
 public class main {
 
+    public static void main(String[] args) {
 
-    
-}
+        System.out.println("===================================");
+        System.out.println("================MENU===============");
+        System.out.println("===================================");
+        System.out.println("1. Introducir nuevo contacto");
+        System.out.println("2. Mostrar los datos de la persona 'x'");
+        System.out.println("3. Editar contactos de la agenda");
+        System.out.println("4. Agregar nuevos contactos");
+        System.out.println("5. Agregar contactos a lista de difusión");
+        System.out.println("6. Introducir contacto profesional");
+        System.out.println("7. SALIR");
+
+        Scanner sc = new Scanner(System.in);
+      
+        System.out.println("introduce una opción");
+        int opcion = 0;
+
+        opcion = sc.nextInt();
+
+
+            switch (opcion) {
+                case 1:
+
+                    System.out.println("Has seleccionado Introducir nuevo contacto");
+                    break;
+                case 2:
+
+                    System.out.println("Has seleccionado Mostrar los datos de la persona 'x'");
+                    break;
+                case 3:
+
+                    System.out.println("Has seleccionado Editar contactos de la agenda");
+                    break;
+                case 4:
+
+                    System.out.println("Has seleccionado Agregar nuevos contactos");
+                    break;
+                case 5:
+
+                    System.out.println("Has seleccionado Agregar contactos a lista de difusión");
+                    break;
+                case 6:
+
+                    System.out.println("Has seleccionado Introducir contacto profesional");
+                    break;
+                case 7:
+
+                    System.out.println("Has seleccionado SALIR");
+                    break;
+                default:
+
+                    System.out.println("Introduce una opción correcta");
+                    break;
+   
+        }
+            
+        }
+
+    }
