@@ -27,10 +27,7 @@ Tenemos que crear una agenda que nos permita:
  */
 package com.cice.agenda;
 
-import java.io.IOException;
-import java.util.InputMismatchException;
 import java.util.Scanner;
-import javax.swing.JOptionPane;
 
 public class main {
 
@@ -48,12 +45,15 @@ public class main {
         System.out.println("7. SALIR");
 
         Scanner sc = new Scanner(System.in);
-      
+
         System.out.println("introduce una opción");
         int opcion = 0;
 
         opcion = sc.nextInt();
 
+        boolean salir = false;
+
+        while (!salir) {
 
             switch (opcion) {
                 case 1:
@@ -83,14 +83,15 @@ public class main {
                 case 7:
 
                     System.out.println("Has seleccionado SALIR");
+                    salir=true;
                     break;
                 default:
 
                     System.out.println("Introduce una opción correcta");
                     break;
-   
-        }
-            
-        }
 
+            }
+        }
     }
+
+}
